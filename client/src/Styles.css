@@ -1,0 +1,114 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  /* Form Styles */
+  
+  form {
+    margin-top: 7vh;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .inputs .name {
+    width: 150px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: right;
+  }
+  
+  .inputs input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    justify-content: center;
+    border-radius: 5px;
+    /* margin: 10px 0 ; */
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .btn-del{
+    padding: 7px;
+  }
+  
+  /* Table Styles */
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 35px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  td{
+    /* margin-top: 2px; */
+    /* background-color: #e64d00; */
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Button Styles */
+  
+  button {
+    background-color: #FF5733;
+  }
+  
+  button:hover {
+    background-color: #e64d00;
+  }
+  
+  /* Input Styles */
+  
+  input[type='text'] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type='text']:focus {
+    outline: none;
+    border-color: #FF5733;
+    box-shadow: 0 0 5px #FF5733;
+  }
+  
