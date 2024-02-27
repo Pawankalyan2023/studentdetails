@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: ./client
+    ports:
+      - "3000:3000"  
+   
+
+    networks:
+      - my-network
+    depends_on:
+      - backend
+
+  backend:
+    build: ./server
+    ports:
+      - "5000:5000" 
+   
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
