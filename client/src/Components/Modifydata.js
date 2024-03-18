@@ -55,7 +55,7 @@ export default function Modifydatase(props) {
 
     try {
       const response = await axios.put(
-        `${process.env.REACT_APP_BACKEND_ROUTE}/${empid}`,
+        "https://studentdetails-backend.onrender.com/${empid}",
         {
           empname,
           dob,
