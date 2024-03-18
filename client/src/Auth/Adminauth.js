@@ -13,7 +13,7 @@ export default function Adminauth() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const registerauth = `${process.env.REACT_APP_BACKEND_ROUTE}/api/authentication`;
+    const registerauth = "https://studentdetails-backend.onrender.com/api/authentication";
 
     try {
       console.log(email, password, name);
