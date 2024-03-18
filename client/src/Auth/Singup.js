@@ -21,7 +21,7 @@ export default function Signup() {
       return;
     }
 
-    const registerauth = `${process.env.REACT_APP_BACKEND_ROUTE}/api/register`;
+    const registerauth = "https://studentdetails-backend.onrender.com/api/register";
     try {
       // console.log(email, password, username);
 
