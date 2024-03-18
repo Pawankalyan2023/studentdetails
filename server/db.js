@@ -3,11 +3,11 @@ require("dotenv").config();
 
 
 const pool = new Pool({
-    user: postgres,
-    password: DbXUerGAspGNKkRvHzKYsRjIPPlZzbRp,
-    host: viaduct.proxy.rlwy.net,
-    port: 29286,
-    database: railway,
+    user: "postgres",
+    password: "DbXUerGAspGNKkRvHzKYsRjIPPlZzbRp",
+    host: "viaduct.proxy.rlwy.net",
+    port: "29286",
+    database: "railway",
 });
 
 
