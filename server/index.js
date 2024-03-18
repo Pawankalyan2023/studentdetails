@@ -168,6 +168,10 @@ app.post("/api/authentication", async (req, res) => {
   }
 });
 
+app.get('/check' , async(req , res) => {
+  res.json({message : "Server is running"})
+})
+
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
