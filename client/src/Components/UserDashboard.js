@@ -92,7 +92,7 @@ export default function EmployeeDetails() {
         return;
       }
 
-      const response = await axios.post(process.env.REACT_APP_BACKEND_ROUTE, {
+      const response = await axios.post("https://studentdetails-backend.onrender.com/", {
         empid: empid,
         empname: empname,
         department: department,
@@ -115,7 +115,7 @@ export default function EmployeeDetails() {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `${process.env.REACT_APP_BACKEND_ROUTE}?page=${currentPage}`
+        `https://studentdetails-backend.onrender.com/?page=${currentPage}`
       );
 
       console.log(response.data);
@@ -177,7 +177,7 @@ export default function EmployeeDetails() {
 
   const handleDelete = async (empid) => {
     try {
-      const url = `${process.env.REACT_APP_BACKEND_ROUTE}/${empid}`; // Ensure there's a slash between route and empid
+      const url = `https://studentdetails-backend.onrender.com/${empid}`; // Ensure there's a slash between route and empid
       console.log("Delete URL:", url);
 
       const response = await axios.delete(url);
