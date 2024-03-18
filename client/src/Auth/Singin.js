@@ -11,7 +11,7 @@ export default function Singin() {
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
-    const loginauth = `${process.env.REACT_APP_BACKEND_ROUTE}/api/login`;
+    const loginauth = "https://studentdetails-backend.onrender.com/api/login";
 
     console.log(dept, email, password);
 
